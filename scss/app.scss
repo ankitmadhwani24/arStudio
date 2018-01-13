@@ -1,0 +1,36 @@
+//site base styling
+@import "variable.scss";
+@import "base.scss";
+@import "helper.scss";
+
+// site required styling
+@import "header.scss";
+@import "footer.scss";
+
+
+// isotope
+/**** Isotope Filtering ****/
+/**** Isotope CSS3 transitions ****/
+.isotope-item {
+	z-index: 2;
+}
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+.isotope {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+	.isotope-item {
+		-webkit-transition-duration: 0.8s;
+		-moz-transition-duration: 0.8s;
+		transition-duration: 0.8s;
+		-webkit-transition-property: -webkit-transform, opacity;
+		-moz-transition-property: -moz-transform, opacity;
+		transition-property: transform, opacity;
+	}
+}

@@ -1,0 +1,26 @@
+.push-top {
+    &-15 {
+        margin-top: $base-space !important;
+    }
+    &-30 {
+        margin-top: $base-space  * 2 !important;
+    }
+}
+
+.push-bottom {
+    &-15 {
+        margin-bottom: $base-space !important;
+    }
+    &-30 {
+        margin-bottom: $base-space  * 2 !important;
+    }
+}
+
+.soft-custom {
+    padding: 20px 10px;
+}
+
+//colors classes
+.text-light-black {
+    color: $text-light-black;
+}

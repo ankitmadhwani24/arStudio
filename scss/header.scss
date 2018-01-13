@@ -1,0 +1,45 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 20px 0;
+    .logo {
+        font-size: 32px;
+        color: white;
+    }
+    #mainnav {
+        display: block;
+        float: right;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        ul {
+            list-style: none;
+            li {
+                float: left;
+                padding: 0 $base-space;
+                a {
+                    font-size: 14px;
+                    color: #fff;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.cmm-header {
+    min-height: 300px;
+    background-color: $theme-pink;
+    color: #fff;
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+}

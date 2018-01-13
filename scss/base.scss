@@ -1,0 +1,144 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: $theme-pink;
+    transition: all .5s;
+    &:hover {
+        color: $theme-pink;
+    }
+}
+
+.intro-sections {
+    p {
+        margin-top: $base-space * 2;
+    }
+    h2 {
+        font-size: 36px;
+        margin-top: $base-space * 2;
+        font-family: 'Montserrat';
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 50px;
+            height: 1px;
+            margin-left: -25px;
+            background-color: #d65050;
+            top: 50px;
+        }
+    }
+}
+
+.services-col-3 {
+    margin-top: $base-space * 3;
+    p {
+        color: $text-light-black;
+    }
+    h3 {
+        color: $text-black;
+        font-size:20px;
+    }
+    .col-sm-4 {
+        transition: all .5s;
+        &:hover {
+            background-color: $theme-pink;
+            color: #fff;
+            border-radius: 23px;
+            padding: 20px 10px;
+            h3,p {
+                color: #fff;
+                transition: all .5s;
+            }
+        }
+    }
+}
+
+.carousel-item,
+.carousel,
+.carousel-inner  {
+    height: 100%;
+}
+
+.carousel {
+    h3 {
+        position: relative;
+        display: inline-block;
+        font-size: 57px;
+        line-height: 67px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 50px;
+            height: 1px;
+            margin-left: -25px;
+            background-color: #d65050;
+        }
+    }
+    .carousel-caption {
+        top: 40%;
+        .subtitle {
+            font-size: 30px;
+            line-height: 40px;
+            padding: 20px 0 50px;
+            font-weight: 300;
+        }
+    }
+    .carousel-inner {
+        background-image: url(../img/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.section {
+    &-contact {
+        margin: $base-space * 4 0;
+        .media {
+            margin-bottom: $base-space * 2;
+        }
+    }
+    &-portfolio {
+        .portfolio-img {
+            min-height: 200px;
+            background-color: $theme-pink;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#filters {
+    list-style-type: none;
+    text-align: center;
+    margin-top: $base-space * 3;
+    li {
+        display: inline-block;
+        a {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 0 15px;
+            font-weight: 500;
+            font-size: 18px;
+            &.selected {
+                background-color: $theme-pink;
+                color: #fff;
+                line-height: 2;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+#container {
+    margin: $base-space * 2 0;
+}

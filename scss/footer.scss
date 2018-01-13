@@ -1,0 +1,39 @@
+footer {
+    padding: $base-space * 3 0 0 0;
+    background-color: $black-light;
+    color: #767676;
+    ul {
+        li {
+            a {
+                color: #767676;
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        position: relative;
+        padding-left: $base-space * 2;
+        i {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -7px;
+            color: $theme-pink;
+        }
+        a {
+            color: #767676;
+        }
+    }
+    .copy {
+        margin-top: $base-space * 2;
+        background-color: #333;
+        color: #fff;
+        padding: 5px 0;
+        span {
+            font-size: 10px;
+        }
+    }
+}
