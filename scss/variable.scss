@@ -1,7 +1,17 @@
 $base-space: 15px;
 
 //colors
-$black-light: #443f3f;
-$theme-pink: #d65050;
+$black-light: #223547;
+$theme-pink: #f8f8f8;
 $text-black: #443f3f;
 $text-light-black: #767676;
+
+.bg-gray {
+    background-color: $theme-pink;
+}
+.bg-dark-blue {
+    background-color: #094074;
+}
+.bg-light-blue {
+    background-color: #1C77C3;
+}

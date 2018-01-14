@@ -1,11 +1,11 @@
 footer {
     padding: $base-space * 3 0 0 0;
     background-color: $black-light;
-    color: #767676;
+    color: #c1ccce;
     ul {
         li {
             a {
-                color: #767676;
+                color: #c1ccce;
                 font-size: 14px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 500;
@@ -24,12 +24,12 @@ footer {
             color: $theme-pink;
         }
         a {
-            color: #767676;
+            color: #c1ccce;
         }
     }
     .copy {
         margin-top: $base-space * 2;
-        background-color: #333;
+        background-color: $black-light;
         color: #fff;
         padding: 5px 0;
         span {

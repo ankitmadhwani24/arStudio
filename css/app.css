@@ -1,12 +1,21 @@
+.bg-gray {
+  background-color: #f8f8f8; }
+
+.bg-dark-blue {
+  background-color: #094074; }
+
+.bg-light-blue {
+  background-color: #1C77C3; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px; }
 
 a {
-  color: #d65050;
+  color: #223547;
   transition: all .5s; }
   a:hover {
-    color: #d65050; }
+    color: #223547; }
 
 .intro-sections p {
   margin-top: 30px; }
@@ -25,6 +34,44 @@ a {
     margin-left: -25px;
     background-color: #d65050;
     top: 50px; }
+.intro-sections .img-bloc {
+  width: 300px;
+  margin: auto; }
+.intro-sections .push-top {
+  margin: 30px 0; }
+.intro-sections .icon-img {
+  width: 100px;
+  margin: auto;
+  margin-top: 30px; }
+  .intro-sections .icon-img img {
+    border-radius: 50%; }
+.intro-sections .portfolio-bg-img-1 {
+  background-image: url("../img/port-1.jpeg");
+  min-height: 350px;
+  background-size: cover;
+  background-position: center; }
+.intro-sections .portfolio-bg-img-2 {
+  background-image: url("../img/port-2.jpeg");
+  min-height: 350px;
+  background-size: cover;
+  background-position: center; }
+.intro-sections .portfolio-bg-img-3 {
+  background-image: url("../img/port-3.jpeg");
+  min-height: 350px;
+  background-size: cover;
+  background-position: center; }
+.intro-sections .portfolio-bg-img-4 {
+  background-image: url("../img/port-4.jpeg");
+  min-height: 350px;
+  background-size: cover;
+  background-position: center; }
+.intro-sections .portfolio-index .col-sm-6 {
+  padding: 0; }
+.intro-sections .portfolio-index .desc {
+  padding: 0px 20px; }
+.intro-sections.end p.end-title {
+  font-size: 20px;
+  font-weight: 500; }
 
 .services-col-3 {
   margin-top: 45px; }
@@ -36,12 +83,12 @@ a {
   .services-col-3 .col-sm-4 {
     transition: all .5s; }
     .services-col-3 .col-sm-4:hover {
-      background-color: #d65050;
+      background-color: #f8f8f8;
       color: #fff;
       border-radius: 23px;
       padding: 20px 10px; }
-      .services-col-3 .col-sm-4:hover h3, .services-col-3 .col-sm-4:hover p {
-        color: #fff;
+      .services-col-3 .col-sm-4:hover h3, .services-col-3 .col-sm-4:hover p, .services-col-3 .col-sm-4:hover i {
+        color: #223547;
         transition: all .5s; }
 
 .carousel-item,
@@ -85,8 +132,43 @@ a {
     margin-bottom: 30px; }
 .section-portfolio .portfolio-img {
   min-height: 200px;
-  background-color: #d65050;
+  background-color: #f8f8f8;
   margin-bottom: 10px; }
+.section-get-in .min-h-400 {
+  min-height: 532px; }
+.section-get-in p, .section-get-in h2, .section-get-in a {
+  color: #fff; }
+.section-get-in h2 {
+  margin-bottom: 15px; }
+.section-get-in input, .section-get-in textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+  resize: none;
+  padding-left: 0;
+  padding-right: 0; }
+.section-get-in ::placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */ }
+.section-get-in :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff; }
+.section-get-in ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff; }
+
+.submit-get {
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 7px 28px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 #filters {
   list-style-type: none;
@@ -101,8 +183,7 @@ a {
       font-weight: 500;
       font-size: 18px; }
       #filters li a.selected {
-        background-color: #d65050;
-        color: #fff;
+        background-color: #f8f8f8;
         line-height: 2;
         border-radius: 5px; }
 
@@ -151,13 +232,13 @@ header {
         padding: 0 15px; }
         header #mainnav ul li a {
           font-size: 14px;
-          color: #fff;
+          color: #223547;
           font-family: 'Montserrat', sans-serif;
           font-weight: 500; }
 
 .cmm-header {
   min-height: 300px;
-  background-color: #d65050;
+  background-color: #f8f8f8;
   color: #fff; }
   .cmm-header h1 {
     font-family: 'Montserrat', sans-serif;
@@ -165,10 +246,10 @@ header {
 
 footer {
   padding: 45px 0 0 0;
-  background-color: #443f3f;
-  color: #767676; }
+  background-color: #223547;
+  color: #c1ccce; }
   footer ul li a {
-    color: #767676;
+    color: #c1ccce;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500; }
@@ -181,12 +262,12 @@ footer {
       left: 0;
       top: 50%;
       margin-top: -7px;
-      color: #d65050; }
+      color: #f8f8f8; }
     footer p a {
-      color: #767676; }
+      color: #c1ccce; }
   footer .copy {
     margin-top: 30px;
-    background-color: #333;
+    background-color: #223547;
     color: #fff;
     padding: 5px 0; }
     footer .copy span {

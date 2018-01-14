@@ -4,10 +4,10 @@ body {
 }
 
 a {
-    color: $theme-pink;
+    color: #223547;
     transition: all .5s;
     &:hover {
-        color: $theme-pink;
+        color: #223547;
     }
 }
 
@@ -32,6 +32,46 @@ a {
             top: 50px;
         }
     }
+    .img-bloc {
+        width: 300px;
+        margin: auto;
+    }
+    .push-top {
+        margin: $base-space * 2 0;
+    }
+    .icon-img {
+        width: 100px;
+        margin: auto;
+        margin-top: 30px;
+        img {
+            border-radius: 50%;
+        }
+    }
+    @for $i from 1 through 4 {
+        .portfolio-bg-img-#{$i} {
+            background-image: url('../img/port-#{$i}.jpeg');
+            min-height: 350px;
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+    .portfolio-index {
+        .col-sm-6 {
+            padding: 0;
+        }
+        .desc {
+            padding: 0px 20px;
+        }
+    }
+    &.end {
+        p {
+            &.end-title {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 .services-col-3 {
@@ -50,8 +90,8 @@ a {
             color: #fff;
             border-radius: 23px;
             padding: 20px 10px;
-            h3,p {
-                color: #fff;
+            h3,p,i {
+                color: #223547;
                 transition: all .5s;
             }
         }
@@ -115,8 +155,53 @@ a {
             margin-bottom: 10px;
         }
     }
+
+    &-get-in {
+        .min-h-400 {
+            min-height: 532px;
+        }
+        p, h2,a {
+            color: #fff;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        input,textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            border-radius: 0;
+            resize: none;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        ::placeholder {
+            color: #fff;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #fff;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #fff;
+        }
+    }
 }
 
+.submit-get {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 7px 28px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 #filters {
     list-style-type: none;
     text-align: center;
@@ -131,7 +216,6 @@ a {
             font-size: 18px;
             &.selected {
                 background-color: $theme-pink;
-                color: #fff;
                 line-height: 2;
                 border-radius: 5px;
             }
